@@ -1,0 +1,214 @@
+/* Variables globales para colores */
+:root {
+    --bg-light: #f0f4f8;
+    /* Fondo claro */
+    --bg-dark: #121212;
+    /* Fondo oscuro */
+    --card-light: #ffffff;
+    /* Tarjeta clara */
+    --card-dark: #1e1e1e;
+    /* Tarjeta oscura */
+    --text-light: #333333;
+    /* Texto oscuro (modo claro) */
+    --text-dark: #f5f5f5;
+    /* Texto claro (modo oscuro) */
+    --accent: #4caf50;
+    /* Color de acento (botones, etc.) */
+    --danger-color: red;
+    /* Color de peligro (botón eliminar) */
+}
+
+/* Tema claro */
+html[data-theme="light"] {
+    --bg: var(--bg-light);
+    --card: var(--card-light);
+    --text: var(--text-light);
+}
+
+/* Tema oscuro */
+html[data-theme="dark"] {
+    --bg: var(--bg-dark);
+    --card: var(--card-dark);
+    --text: var(--text-dark);
+}
+
+/*===========================
+=       RESETEO Y BASE      =
+===========================*/
+
+/* Estilos base para todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos base del body */
+body {
+    background: var(--bg);
+    /* Fondo dinámico */
+    color: var(--text);
+    /* Texto dinámico */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*===========================
+=         HEADER            =
+===========================*/
+
+header {
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.top-bar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/*===========================
+=         CONTENEDOR        =
+===========================*/
+
+.container {
+    flex: 1;
+    padding: 1rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+/*===========================
+=    FORMULARIO Y LISTA     =
+===========================*/
+
+.form-card,
+.list-card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs, selects y botones del formulario */
+input,
+select,
+button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Botón principal */
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Efecto hover en botón */
+button:hover {
+    opacity: 0.9;
+}
+
+/*===========================
+=     TARJETAS DE GASTO     =
+===========================*/
+
+/* Tarjeta individual de gasto */
+.expense-card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de info del gasto */
+.expense-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Información textual del gasto */
+.expense-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.expense-text strong {
+    font-weight: 600;
+}
+
+.expense-text small {
+    font-size: 0.85rem;
+    color: var(--text);
+}
+
+/* Monto del gasto */
+.expense-amount {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Previene saltos de línea en montos */
+.expense-amount span {
+    white-space: nowrap;
+}
+
+/* Botón eliminar gasto */
+.expense-amount button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: red;
+    cursor: pointer;
+}
+
+/*===========================
+=        TOTAL GASTADO      =
+===========================*/
+
+.total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/*===========================
+=           FOOTER          =
+===========================*/
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/*===========================
+=       ANIMACIÓN LOTTIE    =
+===========================*/
+
+#lottie {
+    width: 100%;
+    margin-bottom: 1rem;
+}

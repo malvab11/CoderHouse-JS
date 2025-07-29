@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ExpenseFlow</title>
+
+    <!-- Fuente principal del sitio -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Estilos del proyecto -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- Encabezado con control de tema e idioma -->
+    <header>
+        <div class="top-bar">
+            <!-- Botón de cambio de tema (modo claro/oscuro) -->
+            <button id="theme-toggle" aria-label="Toggle theme">🌞</button>
+
+            <!-- Selector de idioma -->
+            <select id="lang-select">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+
+        <!-- Título de la app -->
+        <h1 id="app-title">Gestor de Gastos - Entregable 2</h1>
+    </header>
+
+    <main class="container">
+        <!-- Animación Lottie -->
+        <div id="lottie"></div>
+
+        <!-- Formulario de registro de gastos -->
+        <section class="form-card">
+            <h2 data-i18n="registerExpense">Registrar Gasto</h2>
+
+            <form id="expense-form">
+                <!-- Campo para descripción del gasto -->
+                <input id="title" type="text" placeholder="" required data-i18n-placeholder="description" />
+
+                <!-- Campo para monto del gasto -->
+                <input id="amount" type="number" placeholder="" required data-i18n-placeholder="amount" />
+
+                <!-- Selector de categoría -->
+                <select id="category" required>
+                    <option value="" data-i18n="category">Categoría</option>
+                    <option value="food" data-i18n="food">Comida</option>
+                    <option value="transport" data-i18n="transport">Transporte</option>
+                    <option value="bills" data-i18n="bills">Servicios</option>
+                    <option value="other" data-i18n="other">Otros</option>
+                </select>
+
+                <!-- Botón para agregar gasto -->
+                <button type="submit" data-i18n="add">Agregar</button>
+            </form>
+        </section>
+
+        <!-- Sección que lista los gastos registrados -->
+        <section class="list-card">
+            <h2 data-i18n="expenses">Gastos Registrados</h2>
+
+            <!-- Contenedor de la lista de gastos -->
+            <div id="expenses-list"></div>
+
+            <!-- Total gastado -->
+            <div class="total">
+                <span data-i18n="totalSpent">Total Gastado:</span>
+                <span id="total-amount">0</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página con créditos -->
+    <footer>&copy; 2025 Gestor de Gastos - Entregable 2</footer>
+
+    <!-- Librería de animaciones Lottie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+    <!-- Lógica principal de la app -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

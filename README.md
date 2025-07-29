@@ -76,12 +76,5 @@ Haz clic en el ícono de sol/luna para alternar entre el tema claro y oscuro.
 ## 🧑 Autor
 
 **Marlon Alva**  
-Desarrollador JavaScript | CoderHouse  
+Desarrollador Mobile
 [GitHub](https://github.com/malvab11)
-
----
-
-## 📄 Licencia
-
-Este proyecto se encuentra bajo la licencia MIT.  
-Uso libre para fines educativos.

@@ -4,7 +4,7 @@ Este proyecto es un simulador interactivo de gastos personales desarrollado como
 
 ## 📸 Vista Previa
 
-![preview](./preview.png)
+![preview](assets/preview.png)
 
 > 💡 Incluye soporte para tema oscuro/claro y cambio dinámico de idioma.
 

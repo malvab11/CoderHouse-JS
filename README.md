@@ -6,9 +6,9 @@ Este proyecto es un simulador interactivo de gastos personales desarrollado como
 
 ![preview](assets/preview.png)
 
-## 🔗 Demo en vivo
+## 🌐 Vista previa en línea
 
-[Haz clic aquí para ver el proyecto funcionando]((https://coder-house-js-kohl.vercel.app))
+🔗 [Haz clic aquí para ver el proyecto desplegado en Vercel](https://coder-house-js-kohl.vercel.app)
 
 > 💡 Incluye soporte para tema oscuro/claro y cambio dinámico de idioma.
 

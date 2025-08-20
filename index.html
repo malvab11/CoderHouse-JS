@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega Final</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="js/app.js"></script>
+</head>
+
+<body class="bg-neutral-900 text-white font-sans">
+    <div class="layout flex h-screen">
+        <aside class="sidebar w-60 bg-neutral-950 p-4 flex flex-col">
+            <div class="logo text-2xl font-bold mb-6">MySpotify</div>
+            <nav class="menu flex-1">
+                <ul class="space-y-4">
+                    <li><a href="#" class="flex items-center gap-3 hover:text-green-400">🏠 Inicio</a></li>
+                    <li><a href="#" class="flex items-center gap-3 hover:text-green-400">🔍 Buscar</a></li>
+                    <li><a href="#" class="flex items-center gap-3 hover:text-green-400">📚 Tu biblioteca</a></li>
+                </ul>
+            </nav>
+            <div class="menu extra mt-6 border-t border-neutral-700 pt-4">
+                <ul class="space-y-3">
+                    <li><a href="#" class="hover:text-green-400">➕ Crear Playlist</a></li>
+                    <li><a href="#" class="hover:text-green-400">❤️ Tus favoritos</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="flex flex-col flex-1">
+            <header class="header flex justify-between items-center p-4 bg-neutral-900 border-b border-neutral-800">
+                <div
+                    class="search-bar flex items-center gap-3 bg-neutral-800 px-4 py-2 rounded-full w-80 shadow-inner hover:shadow-lg transition-shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+                    </svg>
+                    <input type="text" placeholder="Buscar canciones, artistas..."
+                        class="bg-neutral-800 text-white placeholder-gray-400 focus:outline-none w-full" />
+                </div>
+
+                <div class="profile flex items-center gap-3">
+                    <img src="https://placehold.co/40" alt="Usuario" class="avatar rounded-full">
+                    <span class="username font-medium">Marlon</span>
+                </div>
+            </header>
+
+            <main class="main-content flex-1 overflow-y-auto p-6 space-y-10">
+                <section>
+                    <h2 class="text-2xl font-bold mb-4">Playlists destacadas</h2>
+                    <div class="card-grid grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="card bg-base-200 shadow-xl hover:bg-base-300 cursor-pointer transition">
+                            <figure><img src="https://placeholder.co/200" alt="Top Hits" /></figure>
+                            <div class="card-body">
+                                <h3 class="card-title">Top Hits</h3>
+                                <p class="text-sm">Las canciones más escuchadas del momento</p>
+                            </div>
+                        </div>
+                        <div class="card bg-base-200 shadow-xl hover:bg-base-300 cursor-pointer transition">
+                            <figure><img src="https://placeholder.co/200" alt="Chill Vibes" /></figure>
+                            <div class="card-body">
+                                <h3 class="card-title">Chill Vibes</h3>
+                                <p class="text-sm">Música relajante para concentrarte</p>
+                            </div>
+                        </div>
+                        <div class="card bg-base-200 shadow-xl hover:bg-base-300 cursor-pointer transition">
+                            <figure><img src="https://placeholder.co/200" alt="Workout" /></figure>
+                            <div class="card-body">
+                                <h3 class="card-title">Workout</h3>
+                                <p class="text-sm">Energía para tus entrenamientos</p>
+                            </div>
+                        </div>
+                        <div class="card bg-base-200 shadow-xl hover:bg-base-300 cursor-pointer transition">
+                            <figure><img src="https://placeholder.co/200" alt="Retro Classics" /></figure>
+                            <div class="card-body">
+                                <h3 class="card-title">Retro Classics</h3>
+                                <p class="text-sm">Los mejores hits de los 80s y 90s</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4">Canciones populares</h2>
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Título</th>
+                                    <th>Álbum</th>
+                                    <th>Fecha</th>
+                                    <th>Duración</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="https://placeholder.co/40" class="rounded" />
+                                            <div>
+                                                <div class="font-bold">Shape of You</div>
+                                                <div class="text-sm opacity-50">Ed Sheeran</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Divide</td>
+                                    <td>2017-01-06</td>
+                                    <td>3:54</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="https://placeholder.co/40" class="rounded" />
+                                            <div>
+                                                <div class="font-bold">Blinding Lights</div>
+                                                <div class="text-sm opacity-50">The Weeknd</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>After Hours</td>
+                                    <td>2020-03-20</td>
+                                    <td>3:20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="player flex items-center justify-between p-4 bg-neutral-950 border-t border-neutral-800">
+                <div class="song-info flex items-center gap-3">
+                    <img src="https://placehold.co/50" alt="Album cover" class="rounded">
+                    <div>
+                        <h4 class="font-semibold text-sm">Nombre de la canción</h4>
+                        <p class="text-xs text-neutral-400">Artista</p>
+                    </div>
+                </div>
+
+                <div class="controls flex flex-col items-center gap-2">
+                    <div class="flex items-center gap-6">
+                        <button class="play-btn text-2xl hover:text-green-400">▶️</button>
+                    </div>
+                </div>
+
+                <div class="volume flex items-center gap-2 w-32">
+                    <span>🔊</span>
+                    <input type="range" min="0" max="100" value="70" class="w-full accent-green-500">
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
